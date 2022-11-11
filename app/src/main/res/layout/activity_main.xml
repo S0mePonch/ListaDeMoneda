@@ -14,9 +14,84 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="340dp"
         android:onClick="agregar"
-        android:text="ACEPTAR"
+        android:text="AGREGAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnOrigen"
+        android:layout_width="408dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="253dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPrincipal"
+        android:layout_width="242dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="192dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnDestino"
+        android:layout_width="408dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="171dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:text="Ingrese el monto origen"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="80dp"
+        android:text="CALCULAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
